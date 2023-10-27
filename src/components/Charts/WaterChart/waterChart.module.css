@@ -1,0 +1,73 @@
+.waterChart {
+  height: 412px;
+  width: 706px;
+  margin-top: 25px;
+}
+
+.chart {
+  width: 676px;
+  padding: 25px 20px 24px 14px;
+  background-color: #0F0F0F;
+  border-radius: 8px;
+
+  overflow-x: auto;
+}
+
+.waterTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 9px;
+}
+
+.chartTitle {
+  margin-right: 58px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.chartSubtitle {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px
+}
+
+.average {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-primary-gray);
+  margin-left: 8px;
+}
+
+
+@media screen and (min-width: 834px) and (max-width: 1439px) {
+  .caloriesChart {
+    height: 422px;
+    width: 706px;
+  }
+
+  .chart {
+    width: 780px;
+    height: 415px;
+  }
+
+  .chartTitle {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .waterChart {
+    width: 676px;
+    height: 420px;
+    margin-top: 0px;
+  }
+}

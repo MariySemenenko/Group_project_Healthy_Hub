@@ -1,0 +1,165 @@
+.dashboardContainer {
+  margin-bottom: 20px;
+}
+
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollWrapper {
+  overflow-x: scroll;
+}
+
+.scrollWrapper::-webkit-scrollbar {
+  margine-top: -5px;
+  height: 8px;
+  /* Висота скроллбара */
+}
+
+/* Стилизация бегунка (ползунка) скроллбара */
+.scrollWrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255, 0.1);
+  /* Цвет бегунка */
+  border-radius: 12px;
+  /* Скругление углов бегунка */
+}
+
+/* Стилизация трека (фона) скроллбара */
+.scrollWrapper::-webkit-scrollbar-track {
+  background-color: rgb(15, 15, 15, 1);
+  /* Цвет фона трека */
+}
+
+.dashboardTitle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.dashboardTitleP {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.dashboardTitleUl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btnToMain {
+  padding-right: 8px;
+}
+
+.toggleBtn {
+  display: block;
+  width: 16px;
+  margin-left: 6px;
+  height: 16px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.month {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: end;
+}
+
+.arrowDownSvg {
+  margin-left: 12px;
+}
+
+.lastButton {
+  color: #FFF;
+  background-color: #050505;
+  text-align: start;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  width: 212px;
+  padding: 16px 12px;
+  border-radius: 12px;
+  /* background: #0F0F0F; */
+  box-shadow: 0px 4px 14px 0px rgba(227, 255, 168, 0.20);
+}
+
+
+/* MOBILE  */
+
+.container {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TABLET */
+@media screen and (min-width: 834px) and (max-width: 1439px) {
+  .container {
+    width: 834px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .scrollWrapper {
+    overflow-x: hidden;
+    height: 488px;
+  }
+
+  .dashboardTitle {
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    margin-right: 6px;
+    justify-content: space-between;
+  }
+
+  .chartContainer {
+    width: 780px;
+    margin-bottom: 25px;
+  }
+
+  .toggleBtn {
+    margin-left: 12px;
+  }
+
+  .canvas {
+    width: 780px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .chartContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .scrollWrapper {
+    width: 100%;
+    height: 440px;
+    overflow-x: hidden;
+  }
+
+  .dashboardTitle {
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,72 @@
+.weightTable {
+  display: flex;
+  flex-direction: row;
+  width: 1372px;
+  height: 110px;
+  align-items: center;
+  background-color: #0f0f0f;
+  border-radius: 8px;
+  padding: 24px 36px 36px 23px;
+  margin-bottom: 7px;
+}
+
+.tableBlock {
+  display: flex;
+  width: 58px;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 56px; */
+}
+
+.tableBlock:not(:last-child) {
+  margin-right: 56px;
+}
+
+.tableUpRow {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+
+.tableDownRow {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--color-primary-gray);
+}
+
+@media screen and (min-width: 834px) {
+  .weightTable {
+    width: 780px;
+    height: 110px;
+    padding: 24px 20px 36px 22px;
+  }
+
+  .tableBlock:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+/* @media screen and(min-width: 834px) {
+  .weightTable {
+    padding: 24px 20px 36px 22px;
+  } */
+
+/* .tableBlock {
+    padding-right: 6px;
+  } */
+/* } */
+
+@media screen and (min-width: 1440px) {
+  .weightTable {
+    width: 1372px;
+    height: 110px;
+  }
+
+  .tableBlock:not(:last-child) {
+    margin-right: 56px;
+  }
+}
